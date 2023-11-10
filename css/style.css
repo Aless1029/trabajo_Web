@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 73, 94, 0.7);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+}
+
+.navbar__items {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: #95a5a6;
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-right: 5px;
+  list-style: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.navbar__item:hover {
+  background-color: #34495e;
+}
+
+.link {
+  display: block;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ecf0f1;
+}
+
+.title {
+  padding: 1em;
+  border: 4px solid;
+  border-top: none;
+  border-bottom: none;
+  text-shadow: 2px 2px 1px #252525;
+  font-size: 4.7em;
+  background-color: #34495e;
+  color: #ecf0f1;
+  z-index: 2;
+}
+
+.wrapper__container {
+  min-height: 100vh;
+}
+
+.subtitle {
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  text-align: right;
+  font-size: 2.5rem;
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+.column__four {
+  padding: 1rem;
+  line-height: 1.9rem;
+  column-gap: 40px;
+  column-count: 4;
+  column-rule: 5px solid cadetblue;
+  background-color: #f7f1e3;
+}
+
+.column__two {
+  padding: 2rem;
+  line-height: 1.9rem;
+  column-gap: 20px;
+  column-count: 2;
+  column-rule: 10px solid cadetblue;
+}
+
+.container__media {
+  display: flex;
+  flex-flow: column;
+  padding: 1.5em;
+  height: 100%;
+  width: 100%;
+}
+
+.picture {
+  background-color: rgba(6, 58, 71, 0.2);
+  height: 900px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
+  column-count: 2;
+}
+
+.container__date {
+  padding: 1.2em;
+  width: 100%;
+  background-color: #34495e;
+  color: #ecf0f1;
+}
